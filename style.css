@@ -65,7 +65,7 @@ a {
     min-width: 200px;
     margin: 10px;
     cursor: pointer;
-    transition: color 0.4s linear;
+    transition: color 0.5s linear;
     position: relative;
     color: rgb(30, 245, 245);
     text-shadow: 0 0 5px #4d4dff,
@@ -91,7 +91,7 @@ a {
     height: 100%;
     background: rgb(30, 245, 245);
     z-index: -1;
-    transition: transform 0.5s;
+    transition: transform 0.8s;
     transform-origin: 0 0;
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
     box-shadow: 0 0 5px #4d4dff,
