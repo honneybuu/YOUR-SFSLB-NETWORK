@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 
@@ -32,12 +32,6 @@ body {
     text-decoration: underline;
 }
 
-.image img {
-    width: 100%;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
 .main {
     max-width: 800px;
     margin: auto;
@@ -50,10 +44,56 @@ body {
     padding: 16px;
 }
 
+.image img {
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 0 5px #4d4dff;
+    border-radius: 10px;
+}
+
 a {
     text-decoration: none;
-    text-align: center;
-    padding: 20 20;
+    /* text-align: center;
+    padding: 20 20; */
+}
+
+.weblink {
+    color: rgb(30, 245, 245);
+    text-shadow: 0 0 5px #4d4dff,
+    0 0 20px #4d4dff,
+    0 0 40px #4d4dff,
+    0 0 60px #4d4dff;
+    transition: color 0.5s
+}
+
+.weblink:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px #4d4dff,
+    0 0 20px #4d4dff,
+    0 0 40px #4d4dff,
+    0 0 60px #4d4dff;
+    text-decoration: underline;
+}
+
+.info {
+    text-decoration: underline;
+    font-size: bold;
+    color: rgb(30, 245, 245);
+    text-shadow: 0 0 5px #4d4dff,
+    0 0 20px #4d4dff,
+    0 0 40px #4d4dff,
+    0 0 60px #4d4dff;
+    cursor: pointer;
+    transition: color 0.5s
+}
+
+.info:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px #4d4dff,
+    0 0 20px #4d4dff,
+    0 0 40px #4d4dff,
+    0 0 60px #4d4dff;
 }
 
 .btn {
@@ -108,3 +148,19 @@ a {
     transform: scaleY(1);
 }
 
+/* @media (min-width: 1200px) {
+    .image img {
+        width: 100%;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+@media (min-width: 576px) {
+    .image img {
+        position: absolute;
+        width: 50%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+} */
