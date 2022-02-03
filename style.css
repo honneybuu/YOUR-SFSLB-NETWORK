@@ -52,6 +52,14 @@ body {
     border-radius: 10px;
 }
 
+img {
+    color: rgb(30, 245, 245);
+    text-shadow: 0 0 5px #4d4dff,
+    0 0 20px #4d4dff,
+    0 0 40px #4d4dff,
+    0 0 60px #4d4dff;
+}
+
 a {
     text-decoration: none;
     /* text-align: center;
