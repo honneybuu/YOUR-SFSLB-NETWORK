@@ -119,6 +119,8 @@ a {
     0 0 20px #4d4dff,
     0 0 40px #4d4dff,
     0 0 60px #4d4dff;
+    box-shadow: 0 0 5px black;
+    box-shadow: inset 0 0 5px black;
 }
 
 .btn:hover {
@@ -127,6 +129,7 @@ a {
     0 0 20px #4d4dff,
     0 0 40px #4d4dff,
     0 0 60px #4d4dff;
+    box-shadow: inset 0 0 5px black;
 }
 
 .btn::before {
