@@ -87,6 +87,7 @@ a {
 }
 
 .info {
+    display: inline-block;
     text-decoration: underline;
     font-size: bold;
     color: rgb(30, 245, 245);
@@ -158,6 +159,24 @@ a {
 
 .btn2:hover::before {
     transform: scaleY(1);
+}
+
+.txtcolor {
+    color: rgb(30, 245, 245);
+    text-shadow: 0 0 5px #4d4dff,
+    0 0 20px #4d4dff,
+    0 0 40px #4d4dff,
+    0 0 60px #4d4dff;
+    transition: 0.5s
+}
+
+.txtcolor:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px #4d4dff,
+    0 0 20px #4d4dff,
+    0 0 40px #4d4dff,
+    0 0 60px #4d4dff;
+    text-decoration: underline;
 }
 
 /* @media (min-width: 1200px) {
