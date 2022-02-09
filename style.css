@@ -74,7 +74,7 @@ a {
     0 0 20px #4d4dff,
     0 0 40px #4d4dff,
     0 0 60px #4d4dff;
-    transition: color 0.5s
+    transition: 0.5s
 }
 
 .weblink:hover {
