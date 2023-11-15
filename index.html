@@ -1,159 +1,99 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    <title>Alpha Development</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/index.css">
-
-    <script src="https://kit.fontawesome.com/1c3b2e895a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SFSLBN LOGIN VIA OLD WALLET</title>
+<style>
+  body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  label, input, button, p {
+    display: block;
+    margin-bottom: 10px;
+  }
+  button {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .wallets {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer {
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+  }
+</style>
 </head>
-
-
 <body>
-    <!-- GRADIANT EFFECT ON TOP -->
-    <h1 id="main-heading" class="gradiant-effect"></h1>
-    <!-- MAIN DIVIDER WHICH CONTAINS ALL THE OTHER CATEGORY-->
-    <div id="main-box">
-        <!-- ABOUT ME SECTION -->
-        <div class="d-flex justify-content-center" id="about-me">
-            <div class="d-flex">
-                <div class="flex-shrink-0">
-                    <!-- IMAGE OF THE PERSON-->
-                    <img class="gradiant-effect"
-                        src="logo.png"
-                        alt="image">
-                </div>
-                <div class="flex-grow-1 ms-5 name-heading">
-                    <!-- NAME OF THE PERSON -->
-                    <h1><b class="hue-bold">ARD0NIZ#6666</b></h1>
-                    <!-- ABOUT HIM -->
-                    <p class="gray-text">Hey everyone, how are y'all doing?
-                        I am ARD0NIZ,  I am a bot developer and I have already coded over 20+ bots since December 2018. 
-                        My current bot, programmed by me is called Gold Bot and Seltix. In 2021 I have created a test server for other developers which you can join to add your own bots and test them there as well. We are already over 30 team members. However during Covid we were very inactive. So I want to change that. If you want to help me and my team then come and support us yourself. “Wait, why did you say "yourself" ?” Well, we can help you code in the languages HTML, CSS, Discord.js, BDFD, and Aoi.js! (So if you need help or find it interesting join.)
-                        Come and check it out for yourself. <b class="hue-bold">Click here to join <a href="https://discord.gg/mSHwEr4SrQ">Developers.com</a></b></p>
-                </div>
-            </div>
-        </div>
+  <h1 style="color: white;">WELCOME TO YOUR SFSLBN APP</h1>
+  <button id="aboutButton" onclick="openAboutPage()">ABOUT DEVELOPERS</button><br><br><br>
+  <label for="wallet">ENTER YOUR WALLET ADRESSE</label>
+  <input type="text" id="wallet" name="wallet"><br><br><br>
+  <button onclick="checkAddress()">CREATE ACCOUNT</button><br><br><br>
+  <p id="result"></p>
 
-        <h1 class="gradiant-effect" id="second-heading">LINKS</h1>
-        <br>
-        <!-- SKILLS OR TECH HE KNOWS -->
-        <div class="d-flex justify-content-center align-content-between flex-wrap" id="skills">
-        <!--<i class="fab fa-react skills-icon" data-tippy-content="React Native"></i>
-            <i class="fab fa-vuejs skills-icon" data-tippy-content="Vuejs"></i> -->
-            <i class="fab fa-node skills-icon" data-tippy-content="Node.js"></i>
-            <i class="fab fa-html5 skills-icon" data-tippy-content="HTML"></i>
-            <i class="fab fa-css3-alt skills-icon" data-tippy-content="CSS"></i>
-            <i class="fab fa-discord skills-icon" data-tippy-content="Discord Bot Developer"></i>
-        </div>
+  <div class="wallets">
+    <p>ACCEPTED WALLETS: BTC, ETH, ADA, BNB, SOL</p>
+  </div>
 
+  <div class="footer">
+    <p>CREATE WITH 🤍</p>
+  </div>
 
-        <div class="container-xxl gradiant-effect" style=" max-width: 1034px;" id="third-heading">
-            <h1>TEAM PROJECTS</h1>
-        </div>
+  <script>
+    function openAboutPage() {
+      var aboutButton = document.getElementById("aboutButton");
 
-        <!-- PROJECT THAT HE OWNS -->
-        <div class="container-xxl" style="max-width: 1034px;" id="projects">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card mb-3 h-100" style="max-width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Developers.com Bot</h5>
-                            <p class="card-text">A server bot for join and leave messages and for the add-bot system.</p>
-                        </div>
-                    </div>
-                </div>
+      // Öffne die 'about.html'-Seite in einem neuen Fenster/Tab
+      window.close();
+    window.open('https://codepen.io/Honneybuu/pen/xxMRjWE');
 
-                <div class="col">
-                    <div class="card mb-3 h-100" style="max-width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Developers.com Mod Bot</h5>
-                            <p class="card-text">A server bot do moderate the server.</p>
-                        </div>
-                    </div>
-                </div>
+      // Ändere den Stil des Buttons nach dem Klick
+      aboutButton.style.backgroundColor = 'white';
+      aboutButton.style.color = 'black';
+      aboutButton.style.border = '2px solid black';
+    }
 
-                <div class="col">
-                    <div class="card mb-3 h-100" style="max-width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Developers.com AutoMod Bot</h5>
-                            <p class="card-text">A server bot to automoderate the server for example and anti-raid system.</p>
-                        </div>
-                    </div>
-                </div>
+    function checkAddress() {
+      var walletAddress = document.getElementById("wallet").value;
+      var btcRegex = /^bc1[q0-9]{1}[a-zA-HJ-NP-Z0-9]{25,83}$/;
+      var ethRegex = /^0x[a-fA-F0-9]{36,42}$/;
+      var adaRegex = /^addr1q[a-zA-Z0-9]{73,79}$/;
+      var bnbRegex = /^bnb1[a-z0-9]{35,41}$/;
+      var solRegex = /^[A-Za-z0-9]{41,47}$/;
 
-            <!--<div class="col">
-                    <div class="card mb-3 h-100" style="max-width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt</p>
-                        </div>
-                    </div>
-                </div>
+      var resultElement = document.getElementById("result");
+      resultElement.innerHTML = "";
 
-                <div class="col">
-                    <div class="card mb-3 h-100" style="max-width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card mb-3 h-100" style="max-width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt</p>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-        </div>
-
-        <div class="container-xxl gradiant-effect" style=" max-width: 1034px;" id="fourth-heading">
-            <h1>CONTACT ME</h1>
-        </div>
-
-
-        <div class="container-xxl" style="max-width: 1034px;" id="contact-me">
-            <form>
-            <!--<div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address:</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Content:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>-->
-                <button type="submit" class="btn btn-primary btn btn2" style="color: white"><a class="href" href="https://discordapp.com/users/521676495316582400">SEND MESSAGE ON DISCORD</a></button>
-            </form>
-        </div>
-    </div>
-    <br>
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-
-    <script>
-        tippy('[data-tippy-content]', {
-            arrow: false,
-            inertia: true,
-            animation: 'scale',
-            theme: 'gradiant',
-            placement: 'bottom',
-        });
-    </script>
-
-
+      if (btcRegex.test(walletAddress)) {
+        resultElement.innerHTML = "BTC Address recognized!";
+      } else if (ethRegex.test(walletAddress)) {
+        resultElement.innerHTML = "ETH Address recognized!";
+      } else if (adaRegex.test(walletAddress)) {
+        resultElement.innerHTML = "ADA Address recognized!";
+      } else if (bnbRegex.test(walletAddress)) {
+        resultElement.innerHTML = "BNB BEACON CHAIN Address recognized!";
+      } else if (solRegex.test(walletAddress)) {
+        resultElement.innerHTML = "SOL Address recognized!";
+      } else {
+        resultElement.innerHTML = "The entered address could not be recognized.";
+      }
+    }
+  </script>
 </body>
-
 </html>
