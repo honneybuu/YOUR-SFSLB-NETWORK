@@ -1,0 +1,23 @@
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 0;
+}
+
+#pulsatingImage {
+    animation: pulse 1s infinite alternate;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
